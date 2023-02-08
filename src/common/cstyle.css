@@ -1,0 +1,142 @@
+/* head */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.head{
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(7, 7, 102);
+    color: white;
+    height: 6vh;
+}
+
+.contact i{
+    margin: 10px 20px;
+}
+
+
+/* navbar */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 2rem;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+nav a{
+    margin: 0 2rem;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+
+nav a:hover{
+    color: red;
+}
+
+header .nav-btn{
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    visibility: hidden;
+    opacity: 0;
+}
+
+@media (max-width:700px) {
+    header .nav-btn{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    header nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.5rem;
+        background-color: white;
+        transition: 1s;
+        transform: translateY(-210vh);
+        z-index: 1;
+    }
+
+    header .responsive_nav{
+        transform: none;
+    }
+
+    nav .nav-close-btn{
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    nav Link{
+        font-size: 1.2rem;
+    }
+}
+
+
+
+/* footer */
+.footer{
+    color: white;
+    margin-top: 5rem;
+    background-color: black;
+}
+
+.footer .container .first{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer .container .first p{
+    font-size: medium;
+    font-weight: 100;
+}
+
+.footer .container .first .image img{
+    cursor: pointer;
+}
+
+.footer .container .first img{
+  margin-top: 15px;
+}
+
+.footer .container .first.logo img{
+    border-radius: 50%;
+}
+
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 100;
+    width: 90%;
+    margin-top: 12px;
+    margin-left: 5rem;
+    border-top: 0.5px solid white;
+}
+
+.copyright p{
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
